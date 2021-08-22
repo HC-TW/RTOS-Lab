@@ -14,7 +14,7 @@ uC/OS-II: EDF Scheduler
     - Replace the original function for choosing the next priority task into OSNextTask()
     - Print the "preempt" message
   - OSStart()
-    - Replace the original function into OSNextTask()
+    - Replace the original function for choosing the next priority task into OSNextTask()
   - OSTimeTick()
     - OSTCBCur->compTime--
   - OS_Sched()
