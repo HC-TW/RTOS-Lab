@@ -10,13 +10,13 @@ uC/OS-II: EDF Scheduler
 - os_core.c
   - OSNextTask() (User-defined function)
     - Choose the next highest priority task according to their deadline
-  - OSIntExit()
-    - Replace the original function for choosing the next priority task into OSNextTask()
-    - Print the "preempt" message
   - OSStart()
     - Replace the original function for choosing the next priority task into OSNextTask()
   - OSTimeTick()
     - OSTCBCur->compTime--
+  - OSIntExit()
+    - Replace the original function for choosing the next priority task into OSNextTask()
+    - Print the "preempt" message
   - OS_Sched()
     - Replace the original function for choosing the next priority task into OSNextTask()
     - Print the "complete" message
